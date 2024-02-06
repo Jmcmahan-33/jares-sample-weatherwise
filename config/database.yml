@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: sample_weatherwise_production
-  username: sample_weatherwise
-  password: <%= ENV["SAMPLE_WEATHERWISE_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
